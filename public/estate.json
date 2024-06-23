@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Sunset Villa",
+      "segment_name": "Vacation Rental",
+      "description": "A luxurious villa with breathtaking sunset views.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "3500 sq ft",
+      "location": "Malibu, CA",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/m27CPCZf/estate1.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Urban Apartment",
+      "segment_name": "Apartments",
+      "description": "Modern apartment in the heart of the city.",
+      "price": "$850,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "New York, NY",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/rp7wGZgh/estate4.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Countryside Cottage",
+      "segment_name": "Single-family homes",
+      "description": "Cozy cottage surrounded by nature.",
+      "price": "$450,000",
+      "status": "sale",
+      "area": "1200 sq ft",
+      "location": "Vermont",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/pdSpGLVJ/estate3.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Beachfront Condo",
+      "segment_name": "Apartments",
+      "description": "Condo with direct access to the beach.",
+      "price": "$950,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Miami, FL",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/d0NTb96d/estate2.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Mountain Retreat",
+      "segment_name": "Vacation Rental",
+      "description": "Secluded retreat with stunning mountain views.",
+      "price": "$1,500,000",
+      "status": "sale",
+      "area": "4000 sq ft",
+      "location": "Aspen, CO",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/zXqXkgS1/estate6.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Suburban House",
+      "segment_name": "Single-family homes",
+      "description": "Spacious house in a quiet neighborhood.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "2500 sq ft",
+      "location": "San Jose, CA",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/0j05skv3/estate5.jpg"
+    },
+    {
+      "id": 7,
+      "estate_title": "Downtown Loft",
+      "segment_name": "Apartments",
+      "description": "Stylish loft in the downtown area.",
+      "price": "$700,000",
+      "status": "rent",
+      "area": "1300 sq ft",
+      "location": "Chicago, IL",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/FHRrMXBW/estate7.jpg"
+    },
+    {
+      "id": 8,
+      "estate_title": "Historic Mansion",
+      "segment_name": "Single-family homes",
+      "description": "Grand mansion with historical significance.",
+      "price": "$2,800,000",
+      "status": "sale",
+      "area": "5000 sq ft",
+      "location": "Savannah, GA",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/8z9SxJWc/estate8.jpg"
+    },
+    {
+      "id": 9,
+      "estate_title": "Lake House",
+      "segment_name": "Vacation Rental",
+      "description": "Charming house on the lakefront.",
+      "price": "$900,000",
+      "status": "rent",
+      "area": "2200 sq ft",
+      "location": "Lake Tahoe, CA",
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/m27CPCZf/estate1.jpg"
+    }
+  ]
+  

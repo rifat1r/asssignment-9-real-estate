@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Sunset Villa",
+      "segment_name": "Vacation Rental",
+      "description": "A luxurious villa with breathtaking sunset views. This spacious property offers 5 bedrooms, 4 bathrooms, a large living room, and a state-of-the-art kitchen. Enjoy the infinity pool overlooking the ocean and relax in the beautifully landscaped garden. Ideal for family vacations or a serene retreat.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "3500 sq ft",
+      "location": "Malibu, CA",
+      "facilities": ["5 bedrooms", "4 bathrooms", "living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/m27CPCZf/estate1.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Urban Apartment",
+      "segment_name": "Apartments",
+      "description": "Modern apartment in the heart of the city. Features 3 bedrooms, 2 bathrooms, an open-plan living area, and a contemporary kitchen. The building includes a gym, rooftop pool, and secure parking. Perfect for urban professionals and city dwellers who enjoy a vibrant lifestyle.",
+      "price": "$850,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "New York, NY",
+      "facilities": ["3 bedrooms", "2 bathrooms", "living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/rp7wGZgh/estate4.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Countryside Cottage",
+      "segment_name": "Single-family homes",
+      "description": "Cozy cottage surrounded by nature. This charming home offers 2 bedrooms, 1 bathroom, a snug living room with a fireplace, and a rustic kitchen. Enjoy the tranquility of the countryside with a spacious garden and beautiful views of the surrounding hills.",
+      "price": "$450,000",
+      "status": "sale",
+      "area": "1200 sq ft",
+      "location": "Vermont",
+      "facilities": ["2 bedrooms", "1 bathroom", "living room", "kitchen"],
+      "image": "https://i.postimg.cc/pdSpGLVJ/estate3.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Beachfront Condo",
+      "segment_name": "Apartments",
+      "description": "Condo with direct access to the beach. This modern unit features 2 bedrooms, 2 bathrooms, a bright and airy living room, and a sleek kitchen. Enjoy the ocean breeze from your private balcony. Amenities include a swimming pool, fitness center, and concierge service.",
+      "price": "$950,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Miami, FL",
+      "facilities": ["2 bedrooms", "2 bathrooms", "living room", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/d0NTb96d/estate2.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Mountain Retreat",
+      "segment_name": "Vacation Rental",
+      "description": "Secluded retreat with stunning mountain views. This expansive property boasts 6 bedrooms, 5 bathrooms, a large living area with panoramic views, and a gourmet kitchen. The outdoor area includes a hot tub, fire pit, and hiking trails. Ideal for large families or groups seeking a peaceful getaway.",
+      "price": "$1,500,000",
+      "status": "sale",
+      "area": "4000 sq ft",
+      "location": "Aspen, CO",
+      "facilities": ["6 bedrooms", "5 bathrooms", "living room", "hot tub", "kitchen"],
+      "image": "https://i.postimg.cc/zXqXkgS1/estate6.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Suburban House",
+      "segment_name": "Single-family homes",
+      "description": "Spacious house in a quiet neighborhood. Features 4 bedrooms, 3 bathrooms, a large living room, and a modern kitchen. The property includes a well-maintained garden, a two-car garage, and a backyard patio. Perfect for families looking for a comfortable and peaceful home.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "2500 sq ft",
+      "location": "San Jose, CA",
+      "facilities": ["4 bedrooms", "3 bathrooms", "living room", "kitchen"],
+      "image": "https://i.postimg.cc/0j05skv3/estate5.jpg"
+    },
+    {
+      "id": 7,
+      "estate_title": "Downtown Loft",
+      "segment_name": "Apartments",
+      "description": "Stylish loft in the downtown area. This contemporary space features 2 bedrooms, 1 bathroom, an open-plan living area with high ceilings, and a modern kitchen. Located in a vibrant neighborhood with easy access to shops, restaurants, and public transport. Ideal for young professionals.",
+      "price": "$700,000",
+      "status": "rent",
+      "area": "1300 sq ft",
+      "location": "Chicago, IL",
+      "facilities": ["2 bedrooms", "1 bathroom", "living room", "kitchen"],
+      "image": "https://i.postimg.cc/FHRrMXBW/estate7.jpg"
+    },
+    {
+      "id": 8,
+      "estate_title": "Historic Mansion",
+      "segment_name": "Single-family homes",
+      "description": "Grand mansion with historical significance. This magnificent property offers 8 bedrooms, 6 bathrooms, several living areas, and a traditional kitchen. The estate includes a landscaped garden, a swimming pool, and a private driveway. Perfect for those who appreciate historical charm and luxury.",
+      "price": "$2,800,000",
+      "status": "sale",
+      "area": "5000 sq ft",
+      "location": "Savannah, GA",
+      "facilities": ["8 bedrooms", "6 bathrooms", "multiple living areas", "swimming pool", "kitchen"],
+      "image": "https://i.postimg.cc/8z9SxJWc/estate8.jpg"
+    },
+    {
+      "id": 9,
+      "estate_title": "Lake House",
+      "segment_name": "Vacation Rental",
+      "description": "Charming house on the lakefront. This beautiful property features 4 bedrooms, 3 bathrooms, a cozy living room with a fireplace, and a fully equipped kitchen. Enjoy water activities with direct lake access and relax on the spacious deck overlooking the water.",
+      "price": "$900,000",
+      "status": "rent",
+      "area": "2200 sq ft",
+      "location": "Lake Tahoe, CA",
+      "facilities": ["4 bedrooms", "3 bathrooms", "living room", "kitchen", "lake access"],
+      "image": "https://i.postimg.cc/m27CPCZf/estate1.jpg"
+    }
+  ]
+  
