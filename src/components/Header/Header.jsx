@@ -1,6 +1,16 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+import { CgProfile } from "react-icons/cg";
+import auth from "../../firebase/firebase.config";
+import { Tooltip } from "react-tooltip";
 
 const Header = () => {
+  const { user, logout } = useContext(AuthContext);
+  const handleLogout = () => {
+    logout(auth).then().catch();
+  };
+  console.log(user);
   const links = (
     <>
       <li>
@@ -50,7 +60,25 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        {user ? (
+          <a
+            onClick={handleLogout}
+            className="btn text-xl flex items-center justify-center"
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content={user.displayName}
+            data-tooltip-place="top"
+          >
+            <Tooltip id="my-tooltip"></Tooltip>
+            <span className="text-2xl mt-1">
+              <CgProfile />
+            </span>
+            signOut
+          </a>
+        ) : (
+          <Link className="btn text-xl" to="/login">
+            login
+          </Link>
+        )}
       </div>
     </div>
   );

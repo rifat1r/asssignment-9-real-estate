@@ -1,17 +1,19 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateUserProfile } = useContext(AuthContext);
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
-    const passowrd = e.target.password.value;
-    console.log(email, passowrd);
+    const password = e.target.password.value;
+    const name = e.target.name.value;
+    const photo = e.target.photo.value;
+    console.log(email, password, name, photo);
     //create user
-    createUser(email, passowrd)
+    createUser(email, password)
       .then((result) => {
         console.log(result.user);
         Swal.fire({
@@ -20,37 +22,50 @@ const Register = () => {
           showConfirmButton: false,
           timer: 3000,
         });
+        updateUserProfile(result.user, {
+          displayName: name,
+          photoURL: photo,
+        })
+          .then(() => console.log("profile Updated"))
+          .catch((error) => console.log(error.message));
       })
       .catch((error) => {
         console.log(error);
+        Swal.fire({
+          icon: "error",
+          title: "Email already in use!",
+          showConfirmButton: false,
+          timer: 3000,
+        });
       });
+    <Navigate to="/"></Navigate>;
   };
   return (
     <div className="w-3/4 mx-auto">
-      <h className="text-4xl flex justify-center font-semibold">
+      <h2 className="text-4xl flex justify-center font-semibold">
         Please Register
-      </h>
+      </h2>
       <form onSubmit={handleRegister} className="card-body">
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Email</span>
+            <span className="label-text">Name</span>
           </label>
           <input
-            type="email"
-            placeholder="email"
-            name="email"
+            type="text"
+            placeholder="Name"
+            name="name"
             className="input input-bordered"
             required
           />
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Email</span>
+            <span className="label-text">Phote </span>
           </label>
           <input
-            type="email"
-            placeholder="email"
-            name="email"
+            type="text"
+            placeholder="Photo URL"
+            name="photo"
             className="input input-bordered"
             required
           />
