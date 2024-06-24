@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
+import { SlLocationPin } from "react-icons/sl";
 
 const CardDetails = () => {
   const { id } = useParams();
@@ -23,18 +24,31 @@ const CardDetails = () => {
         <title>LiveLux | Estate Details</title>
       </Helmet>
       <div>
-        <img src={image} />
+        <img className="w-full lg:w-[3000px]" src={image} />
       </div>
-      <div className="space-y-1">
-        <h2 className="text-3xl">{estate_title}</h2>
-        <h3 className="text-xl">Status: {status}</h3>
-        <h3 className="text-xl"> {segment_name}</h3>
+      <div className="space-y-3 lg:space-y-6">
+        <div>
+          <span
+            className="bg-red-500  font-medium px-4 py-1 rounded text-white mr-1
+          "
+          >
+            {status}
+          </span>
+          <span className="bg-red-500  font-medium px-4 py-1 rounded text-white">
+            {segment_name}
+          </span>
+        </div>
+        <h2 className="text-4xl font-semibold text-gray-400">{estate_title}</h2>
         <p>
-          Facilities: {facilities[0]},{facilities[1]}
+          {facilities[0]},{facilities[1]}
           {facilities[2]},{facilities[3]},{facilities[4]}
         </p>
-        <p>Location: {location}</p>
-        <p>Description : {description}</p>
+        <p className="flex items-center gap-1 font-light">
+          {" "}
+          <SlLocationPin /> {location}
+        </p>
+        <hr />
+        <p className="font-medium">{description}</p>
       </div>
     </div>
   );

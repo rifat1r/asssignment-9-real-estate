@@ -1,6 +1,11 @@
+import { Helmet } from "react-helmet-async";
+
 const Contact = () => {
   return (
     <div className="space-y-5 mb-6">
+      <Helmet>
+        <title>LivLux | Contact</title>
+      </Helmet>
       <input
         type="text"
         placeholder="Your name"

@@ -55,7 +55,7 @@ const Login = () => {
           showConfirmButton: false,
           timer: 3000,
         });
-        navigate(location.state?.from || "/");
+        navigate(location.state ? location.state : "/");
       })
       .catch((error) => {
         console.log(error);
@@ -78,7 +78,7 @@ const Login = () => {
           showConfirmButton: false,
           timer: 3000,
         });
-        navigate(location.state?.from || "/");
+        navigate(location.state ? location.state : "/");
       })
       .catch((error) => {
         console.log(error);

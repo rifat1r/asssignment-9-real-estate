@@ -2,7 +2,7 @@ import { SlLocationPin } from "react-icons/sl";
 import { TbToolsKitchen } from "react-icons/tb";
 import { MdPool } from "react-icons/md";
 import { FaBed } from "react-icons/fa";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const EstateCard = ({ aEstate }) => {
