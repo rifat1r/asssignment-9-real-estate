@@ -22,9 +22,11 @@ const Header = () => {
       <li>
         <Link to="/register">Register</Link>
       </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
+      {user && (
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      )}
     </>
   );
   return (

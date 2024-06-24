@@ -1,10 +1,15 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
+  const [show, setShow] = useState(true);
+  const handleShow = () => {
+    setShow(!show);
+  };
   const { createUser, updateUserProfile } = useContext(AuthContext);
   const navigate = useNavigate();
   const handleRegister = (e) => {
@@ -110,17 +115,23 @@ const Register = () => {
             required
           />
         </div>
-        <div className="form-control">
+        <div className="form-control relative">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
           <input
-            type="password"
+            type={show ? "text" : "password"}
             placeholder="password"
             name="password"
             className="input input-bordered"
             required
           />
+          <span
+            onClick={handleShow}
+            className="absolute right-4 bottom-3 text-2xl"
+          >
+            {show ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>}
+          </span>
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-secondary">Register</button>

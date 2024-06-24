@@ -1,13 +1,18 @@
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { signInWithPopup } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
 import { FaGoogle, FaGithub } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
+  const [show, setShow] = useState(true);
+  const handleShow = () => {
+    setShow(!show);
+  };
   const location = useLocation();
   const navigate = useNavigate();
   console.log("location", location);
@@ -104,17 +109,23 @@ const Login = () => {
             required
           />
         </div>
-        <div className="form-control">
+        <div className="form-control relative">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
           <input
-            type="password"
+            type={show ? "text" : "password"}
             placeholder="password"
             name="password"
             className="input input-bordered"
             required
           />
+          <span
+            onClick={handleShow}
+            className="absolute right-4 bottom-3 text-2xl"
+          >
+            {show ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>}
+          </span>
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-secondary">Login</button>

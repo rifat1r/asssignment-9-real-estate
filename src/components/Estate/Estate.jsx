@@ -10,7 +10,9 @@ const Estate = () => {
   }, []);
   return (
     <div>
-      <h2 className="text-4xl">Estates:{estate.length}</h2>
+      <h2 className="text-4xl text-center font-semibold my-5">
+        Explore Our Listings
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {estate.map((aEstate) => (
           <EstateCard key={aEstate.id} aEstate={aEstate}></EstateCard>

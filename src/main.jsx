@@ -10,6 +10,7 @@ import AuthProvider from "./Provider/AuthProvider.jsx";
 import Login from "./components/Login/Login.jsx";
 import PrivateRoutes from "./components/PrivateRoutes/PrivateRoutes.jsx";
 import { HelmetProvider } from "react-helmet-async";
+import Contact from "./components/Contact/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>,
+      },
+      {
+        path: "/contact",
+        element: (
+          <PrivateRoutes>
+            <Contact></Contact>
+          </PrivateRoutes>
+        ),
       },
     ],
   },
