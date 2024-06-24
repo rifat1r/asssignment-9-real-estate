@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const CardDetails = () => {
@@ -18,6 +19,9 @@ const CardDetails = () => {
   console.log(card);
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <Helmet>
+        <title>LiveLux | Estate Details</title>
+      </Helmet>
       <div>
         <img src={image} />
       </div>

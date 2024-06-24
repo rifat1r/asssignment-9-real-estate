@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext);
@@ -69,6 +70,9 @@ const Register = () => {
       <h2 className="text-4xl flex justify-center font-semibold">
         Please Register
       </h2>
+      <Helmet>
+        <title>LiveLux | Register</title>
+      </Helmet>
       <form onSubmit={handleRegister} className="card-body">
         <div className="form-control">
           <label className="label">

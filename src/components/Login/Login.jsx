@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { signInWithPopup } from "firebase/auth";
 import auth from "../../firebase/firebase.config";
 import { FaGoogle, FaGithub } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const location = useLocation();
@@ -86,6 +87,9 @@ const Login = () => {
   };
   return (
     <div className="w-3/4 mx-auto">
+      <Helmet>
+        <title>LiveLux | Login</title>
+      </Helmet>
       <h className="text-4xl flex justify-center font-semibold">Please Login</h>
       <form onSubmit={handleLogin} className="card-body">
         <div className="form-control">
