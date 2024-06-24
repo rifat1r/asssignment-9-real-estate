@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { Link, Navigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Register = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -12,6 +13,29 @@ const Register = () => {
     const name = e.target.name.value;
     const photo = e.target.photo.value;
     console.log(email, password, name, photo);
+    //password verification
+    if (password.length < 6) {
+      return Swal.fire({
+        icon: "error",
+        title: "Password should be atleast 6 characters",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+    } else if (!/[A-Z]/.test(password)) {
+      return Swal.fire({
+        icon: "error",
+        title: "Password should be atleast 1 uppercase character",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+    } else if (!/[a-z]/.test(password)) {
+      return Swal.fire({
+        icon: "error",
+        title: "Password should be atleast 1 lowercase character",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+    }
     //create user
     createUser(email, password)
       .then((result) => {
@@ -33,12 +57,12 @@ const Register = () => {
         console.log(error);
         Swal.fire({
           icon: "error",
-          title: "Email already in use!",
+          title: error.message,
           showConfirmButton: false,
           timer: 3000,
         });
       });
-    <Navigate to="/"></Navigate>;
+    navigate("/");
   };
   return (
     <div className="w-3/4 mx-auto">
