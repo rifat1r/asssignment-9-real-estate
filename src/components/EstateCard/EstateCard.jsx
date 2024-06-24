@@ -22,10 +22,10 @@ const EstateCard = ({ aEstate }) => {
     <div className="rounded-xlbg-base-100 shadow-xl">
       <figure className="relative">
         <img
-          className="p-4 rounded-3xl w-[720px] md:w-[440px] h-[450px] md:h-[250px] mx-auto"
+          className="p-4 rounded-3xl w-[720px] md:w-[440px] h-[300px] md:h-[250px] mx-auto"
           src={image}
         />
-        <span className="absolute top-48 left-8  bg-white px-2 py-1 rounded-lg">
+        <span className="absolute top-60 md:top-48 left-8  bg-white px-2 py-1 rounded-lg">
           {segment_name}
         </span>
         <span className="absolute top-8 left-8 bg-black text-white opacity-50 px-2 rounded-lg">
