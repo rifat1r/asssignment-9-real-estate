@@ -1,8 +1,15 @@
-# React + Vite
+site name: LivLux
+used npm packages:
+1 : react router
+2 : react-helmet
+3 : react-icons
+4 : react-router
+5 : react-tooltip
+6 : sweetalert2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features and Charactarestics
+1 : Resposive for all devices
+2 : Image Carousel
+3 : Detailed Listings
+4 : Easy-to-use navigation menu
+5 : Sweetalert
