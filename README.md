@@ -13,3 +13,5 @@ Features and Charactarestics
 3 : Detailed Listings
 4 : Easy-to-use navigation menu
 5 : Sweetalert
+
+Live Site : https://benevolent-mermaid-a8f75e.netlify.app/
